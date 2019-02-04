@@ -1,5 +1,10 @@
+import java.util.Scanner;
+
 public class TestClass {
     public static void main(String[] args) {
-        SumNumbers.countNumbers();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give number: ");
+        int number = scanner.nextInt();
+        System.out.println(SumNumbers.sumNumbers(number));
     }
 }
